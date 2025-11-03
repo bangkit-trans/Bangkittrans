@@ -5,26 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bangkit Trans - Solusi Transportasi Aman & Nyaman</title>
 
-  <!-- SEO -->
   <meta name="description" content="Bangkit Trans menyediakan layanan transportasi aman, nyaman, dan terpercaya di seluruh Jabodetabek." />
   <meta name="keywords" content="Bangkit Trans, transportasi, sewa mobil, travel, Jabodetabek, charter, rental mobil, perjalanan aman, konveksi transportasi" />
   <meta name="author" content="Bangkit Trans" />
   <meta name="google-site-verification" content="google8a5f834dc77e7e3d" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://bangkittrans.github.io/" />
+  <link rel="canonical" href="https://bangkittrans.github.io/Bangkittrans/" />
 
-  <!-- Open Graph / WhatsApp Preview -->
   <meta property="og:title" content="Bangkit Trans - Solusi Transportasi Aman & Nyaman" />
   <meta property="og:description" content="Bangkit Trans menyediakan layanan transportasi aman, nyaman, dan terpercaya di seluruh Jabodetabek." />
   <meta property="og:image" content="https://bangkittrans.github.io/og-image.jpg" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bangkittrans.github.io/" />
+  <meta property="og:url" content="https://bangkittrans.github.io/Bangkittrans/" />
 
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-  <!-- Style -->
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -34,6 +29,8 @@
       background: linear-gradient(180deg, #f5f5f5, #ffffff);
       color: #222;
       animation: fadeIn 1.5s ease;
+      /* Tambahkan padding di bawah agar floating button tidak tertutup footer */
+      padding-bottom: 70px; 
     }
     header {
       background: #004aad;
@@ -70,6 +67,9 @@
     iframe {
       margin-top: 1rem;
       border-radius: 10px;
+      /* Pastikan iframe mengambil lebar penuh */
+      width: 100%;
+      height: 400px;
     }
     .maps-link {
       display: inline-block;
@@ -91,7 +91,33 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      position: fixed; /* Ubah ke fixed atau pastikan ada di paling bawah */
+      bottom: 0;
+      width: 100%;
+      z-index: 900;
     }
+    
+    /* Floating WhatsApp Button Style */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 70px; /* Di atas footer agar tidak tertutup */
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        z-index: 1000;
+        transition: transform 0.3s;
+        text-decoration: none;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float span { font-size: 30px; line-height: 1; } 
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -122,8 +148,9 @@
   <section>
     <h2>Lokasi Kami</h2>
     <p>Berikut lokasi Bangkit Trans:</p>
+    
     <iframe
-      src="https://www.google.com/maps?q=455M+M79,+Jl.+Mantra,+Suninghir,+Jatilawang,+Kec.+Kramat,+Kabupaten+Tegal,+Jawa+Tengah+52181&output=embed"
+      src="https://maps.google.com/maps?q=Bangkit+Trans,+455M+M79,+Jl.+Mantra,+Suninghir,+Jatilawang,+Kec.+Kramat,+Kabupaten+Tegal,+Jawa+Tengah+52181&t=&z=15&ie=UTF8&iwloc=&output=embed"
       width="100%"
       height="400"
       style="border:0;"
@@ -132,6 +159,7 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
     <br>
+    
     <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=455M+M79,+Jl.+Mantra,+Suninghir,+Jatilawang,+Kec.+Kramat,+Kabupaten+Tegal,+Jawa+Tengah+52181" target="_blank">
       Buka di Google Maps
     </a>
@@ -140,5 +168,10 @@
   <footer>
     <p>© 2025 Bangkit Trans. Semua Hak Dilindungi.</p>
   </footer>
+  
+  <a href="https://wa.me/6283841684035" class="whatsapp-float" target="_blank" aria-label="Hubungi via WhatsApp">
+    <span role="img" aria-label="WhatsApp icon">💬</span>
+  </a>
+
 </body>
 </html>
