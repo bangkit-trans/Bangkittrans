@@ -8,13 +8,18 @@
   <meta name="description" content="Bangkit Trans menyediakan layanan transportasi aman, nyaman, dan terpercaya di seluruh Jabodetabek. Pesan armada terbaik kami sekarang.">
   <meta name="keywords" content="Bangkit Trans, transportasi, travel, armada, aman, nyaman, profesional">
 
+  <!-- ✅ Tag verifikasi Google (isi dengan kode dari Google Search Console) -->
   <meta name="google-site-verification" content="MASUKKAN_KODE_VERIFIKASI_GOOGLE_DI_SINI" />
 
+  <!-- ✅ Tambahkan canonical tag -->
+  <link rel="canonical" href="https://bangkit-trans.github.io/" />
+
+  <!-- Open Graph untuk berbagi di media sosial -->
   <meta property="og:title" content="Bangkit Trans - Solusi Transportasi Aman & Nyaman">
   <meta property="og:description" content="Bangkit Trans menyediakan layanan transportasi aman, nyaman, dan terpercaya di seluruh Jabodetabek.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bangkit-trans.github.io">
-  <meta property="og:image" content="images/1761773084374.jpeg">
+  <meta property="og:url" content="https://bangkit-trans.github.io/">
+  <meta property="og:image" content="https://bangkit-trans.github.io/images/1761773084374.jpeg">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
@@ -23,7 +28,6 @@
       color: #222; 
       background-color: #f9f9f9; 
       overflow-x: hidden; 
-      /* PENTING: Menambah ruang di bawah agar tombol floating tidak tertutup footer */
       padding-bottom: 70px; 
     }
 
@@ -103,7 +107,6 @@
     .contact-list a { color: #0b3d91; text-decoration: none; font-weight: 600; }
     .contact-list a:hover { text-decoration: underline; }
 
-    /* CSS PETA DIKOREKSI */
     iframe { 
       width: 100%; 
       height: 300px; 
@@ -118,17 +121,15 @@
       text-align: center;
       padding: 15px 0;
       font-size: 0.9em;
-      /* Dibuat fixed agar selalu terlihat dan tidak tumpang tindih */
       position: fixed; 
       bottom: 0;
       width: 100%;
       z-index: 900;
     }
 
-    /* CSS FLOATING WHATSAPP BUTTON DITAMBAHKAN */
     .whatsapp-float {
       position: fixed;
-      bottom: 70px; /* Di atas footer agar tidak tertutup */
+      bottom: 70px; 
       right: 20px;
       background-color: #25d366;
       color: white;
@@ -144,7 +145,7 @@
       text-decoration: none;
     }
     .whatsapp-float:hover { transform: scale(1.1); }
-    .whatsapp-float span { font-size: 30px; line-height: 1; } /* Ukuran emoji/icon */
+    .whatsapp-float span { font-size: 30px; line-height: 1; }
 
     @media (max-width: 768px) {
       .feature, .fleet-item { width: 100%; }
